@@ -1,4 +1,74 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+* {
+  box-sizing: border-box;
 }
+
+html {
+  font-family: sans-serif;
+}
+
+br {
+  color:black;
+  width: 1mm;
+}
+
+body {
+  margin: 0;
+  background: top fixed no-repeat url("../img/top-image.png"), bottom fixed no-repeat url("../img/bottom-image.png"), linear-gradient(180deg, #00000080 0vh, #ffffff 10vh,#ffffff 90vh, #00000080) fixed no-repeat;
+  background-size: 100vw, 100vw, 100vw, 100vw 100vh;
+}
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  padding: 20em 0em;
+  position: relative;
+}
+
+main {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background-image: url("../img/logo.png");
+  filter: drop-shadow(5px 5px #000);
+}
+
+header img {
+  width: 100vw; 
+  position: fixed;
+  top: 0;
+}
+
+footer img {
+  width: 100vw; 
+  position: fixed;
+  bottom: 0;
+}
+
+h2 {
+  margin-top: -2.5em;
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+/* Your CSS below here */
